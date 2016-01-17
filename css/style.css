@@ -1,0 +1,482 @@
+/* 01 IMPORT FONT FAMILY
+--------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600);
+
+/* 02 CSS RESET
+--------------------------------------------------------------- */
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	}
+  *:before, *:after {
+    box-sizing: inherit;
+  	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+body {
+  margin: 0; }
+
+h1,h2,h3,h4,p,
+blockquote,ol,ul {
+  margin: 0;
+  padding: 0;
+}
+
+main,li {
+  display: block; 
+}
+
+h1,h2,h3,h4 {
+  font-size: inherit;
+}
+
+a,button {
+  color: inherit;
+  transition: .3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+	outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* 03 GENERAL SETTINGS
+-------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+.btn {
+	text-align: center;
+	border: 2px solid #a67d4a;
+	padding: 4px 12px;
+}
+
+.btn-primary.active, .btn-primary:active, .btn-primary:focus,
+.btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+	color: #fff;
+	background-color: #a67d4a;
+	border-color: #a67d4a;
+	outline: none;
+}
+
+.wrapper {
+	width: 100%;
+	padding: 0 10%;
+}
+
+.section-header {
+	text-align: center;
+}
+
+.section-title {
+	color: #a67d4a;
+	font-weight: 600;
+	font-size: 2em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.title-underline {
+	display: block;
+	width: 30px;
+	height: 3px;
+	margin: 15px auto 15px;
+	background-color: #a67d4a;
+}
+
+.section-subtitle {
+	font-style: italic;
+	font-weight: 300;
+	margin-bottom: 35px;
+	text-transform: uppercase;
+}
+
+/* 04 HEADER SETTINGS
+--------------------------------------------------------------- */
+.header {
+	width: 100%;
+	height: 100vh;
+	background: url(../img/bg.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.navigation i {
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+}
+
+.navigation li {
+	text-align: center;
+}
+
+.navbar-brand {
+	padding: 7px 0 7px;
+}
+
+.navbar-default {
+	background-color: rgba(245,245,245,.8);
+}
+
+.nav>li>a {
+	padding: 14px 0;
+	margin-left: 35px;
+}
+
+.nav a:hover, .nav a:focus, .nav a:active {
+	border-bottom: 3px solid #a67d4a;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	color: #a67d4a;
+	background-color: transparent;
+	border-bottom: 3px solid #a67d4a;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+	color: #a67d4a;
+}
+
+.header-page {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.header-greeting {
+	color: #a67d4a;
+}
+
+.header-title {
+	margin-bottom: 35px;
+	color: #fff;
+	font-weight: 400;
+	line-height: 1.35;
+	font-size: 1.75em;
+}
+
+.header-subtitle {
+	color: #a67d4a;
+	font-weight: 300;
+}
+
+/* 04 ABOUT SETTINGS
+--------------------------------------------------------------- */
+#about {
+	padding: 100px 0;
+}
+
+.about-row {
+	margin-bottom: 35px;
+}
+
+.about-row p {
+	
+}
+
+.about-row p:first-child {
+	margin-bottom: 15px;
+}
+
+.about-links {
+	text-align: center;
+}
+
+/* 04 PROJECT SETTINGS
+--------------------------------------------------------------- */
+#project {
+	padding: 100px 0;
+	background-color: #f5f5f5;
+}
+
+.project-row:first-child {
+	margin-bottom: 35px;
+}
+
+.project-tile {
+	text-align: center;
+	margin-bottom: 35px;
+	padding-top: 43px;
+	border-top: 1px solid #d1d1d1;
+}
+
+.project-tile:first-child {
+	padding-top: 0;
+	border-top: 0;
+}
+
+.more-helper {
+	padding-top: 43px;
+	border-top: 1px solid #d1d1d1;
+}
+
+.project-tile:last-child {
+	margin-bottom: 0;
+}
+
+.project-img {
+	width: 100%;
+	height: 250px;
+	margin-bottom: 1em;
+}
+
+.project-title h3 {
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	color: #a67d4a;
+}
+
+.project-subtitle {
+	font-weight: 300;
+	font-style: italic;
+	margin-bottom: 15px;
+}
+
+#project-img-1 {
+	background: url(../img/project1.jpg) no-repeat center;
+	background-size: cover;
+}
+#project-img-2 {
+	background: url(../img/project2.jpg) no-repeat center;
+	background-size: cover;
+}
+#project-img-3 {
+	background: url(../img/project3.jpg) no-repeat center;
+	background-size: cover;
+}
+#project-img-4 {
+	background: url(../img/project4.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.project-links {
+	text-align: center;
+}
+
+/* 05 CAROUSEL SETTINGS
+--------------------------------------------------------------- */
+.carousel {
+	height: 500px;
+}
+
+.carousel-inner {
+	height: 100%;
+}
+
+.item, .item .active {
+	height: 100%;
+}
+
+#work-img-1 {
+	height: 100%;
+	background: url(../img/project1.jpg) no-repeat top;
+	background-size: cover;
+}
+#work-img-2 {
+	height: 100%;
+	background: url(../img/project2.jpg) no-repeat top;
+	background-size: cover;
+}
+#work-img-3 {
+	height: 100%;
+	background: url(../img/project3.jpg) no-repeat top;
+	background-size: cover;
+}
+#work-img-4 {
+	height: 100%;
+	background: url(../img/project4.jpg) no-repeat top;
+	background-size: cover;
+}
+
+.carousel-caption {
+	height: 50%;
+	width: 50%;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: rgba(245,245,245,.8);
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-title {
+	font-weight: 600;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	color: #a67d4a;
+	text-shadow: 0 1px 2px rgba(255,255,255,.6);
+}
+
+.carousel-subtitle {
+	font-weight: 300;
+	font-style: italic;
+	text-shadow: 0 1px 1px rgba(0,0,0,.9);
+}
+
+.work-links {
+	position: absolute;
+	bottom: 14%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+/* 05 CONTACT SETTINGS
+--------------------------------------------------------------- */
+#contact {
+	padding: 100px 0;
+}
+
+.info {
+	text-align: center;
+}
+
+.contact-tile {
+	margin-bottom: 20px;
+	padding: 35px 0;
+}
+
+.contact-tile:last-child {
+	margin-bottom: 0;
+}
+
+.contact-tile:nth-child(2) {
+	border-top: 1px solid #e1e1e1; 
+	border-bottom: 1px solid #e1e1e1; 
+	padding: 43px 0;
+}
+
+.contact-tile .fa {
+	margin-bottom: 10px;
+}
+
+.contact-title {
+	font-weight: 600;
+	margin-bottom: 15px;
+	color: #a67d4a;
+	text-transform: uppercase;
+}
+
+/* 6 FOOTER SETTINGS
+--------------------------------------------------------------- */
+footer {
+	background-color: #f5f5f5;
+}
+
+.footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: .8em;
+	font-weight: 300;
+}
+
+.copyright {
+	display: inline-block;
+}
+
+.copyright span {
+	font-weight: 600;
+}
+
+.footer-nav {
+	display: inline-block;
+	float: right;
+}
+
+/* 10 MEDIA QUERY SETTINGS
+--------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+	
+}
+
+@media screen and (min-width: 768px) {
+	.btn {
+		padding: 12px 24px;
+	}
+
+	.header-title {
+		font-size: 2.5em;
+	}
+
+	.header-subtitle {
+		font-size: 1.75em;
+	}
+
+	.about-row p {
+		font-size: 1.2em;
+	}
+
+	.project-tile {
+		margin-bottom: 0;
+		padding-top: 0;
+		border-top: 0;
+	}
+
+	.project-row {
+		margin-bottom: 35px
+	}
+	.project-row:last-child {
+		margin-bottom: 0;
+	}
+
+	.project-tile-helper {
+		position: relative;
+		height: 439px;
+	}
+	.project-links {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+
+	.more-helper {
+		padding-top: 0;
+		border-top: 0;
+	}
+
+	.contact-title {
+		font-size: 1.05em;
+	}
+
+	.contact-tile:nth-child(2) {
+		border-left: 1px solid #e1e1e1;
+		border-right: 1px solid #e1e1e1;
+		border-top: 0; 
+		border-bottom: 0; 
+		padding: 43px 0;
+	}
+
+	.footer {
+		font-size: 1em;
+	}
+}
